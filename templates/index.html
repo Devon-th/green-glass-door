@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Green Glass Door</title>
+    <link rel="stylesheet" href="static/styles.css" type="text/css">
 </head>
 <body>
-    <h1>What can enter the green glass door?</h1>
-    <form>
-        <label>Enter your guess!</label>
-        <input type="text" name="guess">
-        <input type="submit" value="Check Answer">
+    <h1>Who (or what) can enter the green glass door?</h1>
+    <img src="static/door-closed.png"><br><br>
+    <form action="/door-result" method="post">
+        <label>Enter your guess!</label><br>
+        <input type="text" name="guess"><br><br>
+        <input type="submit" value="Check Answer"><br><br><br><br>
     </form>
+    <a href="{{url_for('load_palindrome_checker')}}">Another game: Is it a palindrome?</a>
 </body>
 </html>

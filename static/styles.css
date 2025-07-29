@@ -1,0 +1,22 @@
+* {
+    text-align: center;
+}
+
+*:not(h1, form, input) {
+    background-color: rgb(127, 204, 157);
+}
+
+h1, form {
+    color:azure;
+}
+
+#red, #kayak {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+#red {
+    color:red;
+}
+
+#kayak {
+    color:rgb(185, 114, 64);
+}
